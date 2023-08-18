@@ -66,6 +66,12 @@ export default function Index() {
     }
   }, [selected]);
 
+  const clickDay = (item: { value: string }) => {
+    console.log('item', item);
+    // 跳转到指定日期打卡页面
+    Taro.navigateTo({ url: '/pages/clock-in/index' });
+  };
+
   return (
     <ScrollView className='index'>
       <StickyHeader id='user-info'>
@@ -134,6 +140,7 @@ export default function Index() {
             maxDate='2023/08/31'
             marks={taskData}
             hideArrow
+            onDayClick={clickDay}
           />
         </AtCard>
       </View>
