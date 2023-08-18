@@ -1,8 +1,38 @@
-.swiper-banner {
-  position: relative;
+.index {
+  .swiper-banner {
+    position: relative;
+    width: 750px;
+    height: 400px;
+    background-color: black;
 
-  #video {
-    height: 100%;
-    width: 100%;
+    #video {
+      height: 100%;
+      width: 100%;
+    }
+
+    .banner-2,
+    .banner-3 {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .user-info {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: medium;
+
+    .avatar {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background-color: antiquewhite;
+    }
+  }
+
+  .content-cneter {
+    text-align: center;
+    font-weight: 700;
   }
 }

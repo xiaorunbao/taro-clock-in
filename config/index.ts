@@ -1,10 +1,10 @@
-import { defineConfig, type UserConfigExport } from "@tarojs/cli";
+import { defineConfig, UserConfigExport } from "@tarojs/cli";
 import TsconfigPathsPlugin from "tsconfig-paths-webpack-plugin";
 import devConfig from "./dev";
 import prodConfig from "./prod";
 
 // https://taro-docs.jd.com/docs/next/config#defineconfig-辅助函数
-export default defineConfig(async (merge, { command, mode }) => {
+export default defineConfig(async (merge, {}) => {
   const baseConfig: UserConfigExport = {
     projectName: "taro-daka",
     date: "2023-8-14",
@@ -53,6 +53,7 @@ export default defineConfig(async (merge, { command, mode }) => {
       },
     },
     h5: {
+      esnextModules: ["taro-ui"],
       publicPath: "/",
       staticDirectory: "static",
       output: {

@@ -51,9 +51,10 @@
     "@tarojs/runtime": "3.6.11",
     "@tarojs/shared": "3.6.11",
     "@tarojs/taro": "3.6.11",
+    "lodash": "^4.17.21",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "taro-ui": "^2.3.4"
+    "taro-ui": "3.1.0-beta.7"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
@@ -63,6 +64,7 @@
     "@tarojs/test-utils-react": "^0.1.1",
     "@tarojs/webpack5-runner": "3.6.11",
     "@types/jest": "^29.3.1",
+    "@types/lodash": "^4.14.197",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.0",
     "@types/webpack-env": "^1.13.6",
