@@ -31,7 +31,7 @@ export default function Index() {
         success: function (res) {
           if (res.code) {
             console.log('res', res);
-            Taro.setStorage({ key: 'code', data: res.code });
+            Taro.setStorage({ key: 'code', data: res });
             //发起网络请求
           } else {
             console.log('登录失败！' + res.errMsg);
@@ -120,7 +120,7 @@ export default function Index() {
           </View>
         </SwiperItem>
       </Swiper>
-      <AtDivider lineColor='#ed3f14' />
+      <AtDivider lineColor='#ed3f14' height={50} />
       <View className='content-cneter'>
         <Picker
           mode='selector'
@@ -130,7 +130,7 @@ export default function Index() {
         >
           <View className='picker'>当前园区:{selected}</View>
         </Picker>
-        <AtDivider lineColor='#ed3f14' />
+        <AtDivider lineColor='#ed3f14' height={50} />
       </View>
       <View>
         <AtCard title='打卡日历' isFull>

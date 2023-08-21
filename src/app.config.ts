@@ -13,7 +13,12 @@ export default defineAppConfig({
   },
   tabBar: {
     list: [
-      { pagePath: 'pages/index/index', text: '主页' },
+      {
+        pagePath: 'pages/index/index',
+        text: '主页',
+        iconPath: 'resource/home-page.png',
+        selectedIconPath: 'resource/home-page-1.png',
+      },
       {
         pagePath: 'pages/rank/index',
         text: '排行榜',
